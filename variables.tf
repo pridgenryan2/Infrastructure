@@ -1,3 +1,7 @@
+variable "cloudflare_account_name" {
+  type = string
+}
+
 variable "domain" {
   type = string
   description = "El dominio del ambiente correspondiente (ex. work-dev.com, work-tqa.com, work.com)"
