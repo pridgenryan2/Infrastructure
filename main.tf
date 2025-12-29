@@ -9,16 +9,14 @@ terraform {
 
 data "cloudflare_account" "this" {
   filter = {
-    name = "Siguiente"
+    name = var.cloudflare_account_name
   }
 }
 
 resource "cloudflare_registrar_domain" "production" {
   account_id = data.cloudflare_account.this.account_id
-  domain_name = "siguiente.io"
+  domain_name = var.domain
   auto_renew = true
   locked = true
   privacy = true
 }
-
-

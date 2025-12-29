@@ -1,0 +1,3 @@
+cloudflare_account_name = "Siguiente"
+domain                 = "siguiente.io"
+environment            = "production"
